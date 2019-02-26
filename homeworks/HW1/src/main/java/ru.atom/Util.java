@@ -28,9 +28,9 @@ public class Util {
      */
     public static int max(int[] values) {
         //throw new UnsupportedOperationException();
-        Stream<int> streamFromArray = Arrays.stream(values);
-        int max = streamFromArray.stream().max().get();
-        return max;
+        //Stream<int> streamFromArray = Arrays.stream(values);
+        //int max = streamFromArray.stream().max().get();
+        return 0;
     }
 
     /**
