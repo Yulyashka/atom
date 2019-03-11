@@ -1,0 +1,30 @@
+мар 11, 2019 8:06:06 PM ru.example.Game main
+INFO: Logger started!
+мар 11, 2019 8:06:06 PM ru.example.Game play
+INFO: I offered a 5-letter word, your guess?
+мар 11, 2019 8:06:06 PM ru.example.Game play
+INFO: It's your 1 attempt out of 10
+мар 11, 2019 8:06:11 PM ru.example.Game play
+INFO: You won!!!
+мар 11, 2019 8:06:22 PM ru.example.Game play
+INFO: I offered a 5-letter word, your guess?
+мар 11, 2019 8:06:22 PM ru.example.Game play
+INFO: It's your 1 attempt out of 10
+мар 11, 2019 8:06:28 PM ru.example.Game play
+INFO: Bulls: 3;  Cows: 0
+мар 11, 2019 8:06:28 PM ru.example.Game play
+INFO: It's your 2 attempt out of 10
+мар 11, 2019 8:06:36 PM ru.example.Game play
+INFO: Bulls: 3;  Cows: 0
+мар 11, 2019 8:06:36 PM ru.example.Game play
+INFO: It's your 3 attempt out of 10
+мар 11, 2019 8:06:41 PM ru.example.Game play
+INFO: Bulls: 4;  Cows: 0
+мар 11, 2019 8:06:41 PM ru.example.Game play
+INFO: It's your 4 attempt out of 10
+мар 11, 2019 8:06:46 PM ru.example.Game play
+INFO: Bulls: 4;  Cows: 0
+мар 11, 2019 8:06:46 PM ru.example.Game play
+INFO: It's your 5 attempt out of 10
+мар 11, 2019 8:07:00 PM ru.example.Game play
+INFO: You won!!!
