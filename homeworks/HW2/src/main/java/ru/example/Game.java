@@ -34,6 +34,8 @@ public class Game {
             int number = rnd.nextInt(count);
 
             scanner = new Scanner(new File(filename));
+
+
             for (int i = 0; i < number - 1; i++)
                 scanner.nextLine();
             //возврат случайного слова
@@ -86,15 +88,14 @@ public class Game {
         LOGGER.log(Level.INFO, "I offered a " + count + "-letter word, your guess?");
 
         Scanner scan = new Scanner(System.in);
-        for (int i = 0; i < countOfAttempt; i++)
-        {
-            System.out.println("It's your " + (i+1) + " attempt out of 10");
-            LOGGER.log(Level.INFO,"It's your " + (i+1) + " attempt out of 10");
+        for (int i = 0; i < countOfAttempt; i++) {
+            System.out.println("It's your " + (i + 1) + " attempt out of 10");
+            LOGGER.log(Level.INFO, "It's your " + (i + 1) + " attempt out of 10");
             String inputWord = scan.nextLine();
             //проверка на совпадение слов
             if (hiddenWord.equals(inputWord)) {
                 System.out.println("You Won!!!");
-                LOGGER.log(Level.INFO,"You won!!!");
+                LOGGER.log(Level.INFO, "You won!!!");
                 return true;
             }
 
@@ -103,12 +104,12 @@ public class Game {
             int cows = countCows(inputWord, hiddenWord);
             System.out.println("Bulls: " + bulls);
             System.out.println("Cows: " + cows);
-            LOGGER.log(Level.INFO,"Bulls: " + bulls + ";  Cows: " + cows);
+            LOGGER.log(Level.INFO, "Bulls: " + bulls + ";  Cows: " + cows);
         }
 
         //10 попыток закончились
         System.out.println("You Lose: " + hiddenWord);
-        LOGGER.log(Level.INFO,"You Lose: " + hiddenWord);
+        LOGGER.log(Level.INFO, "You Lose: " + hiddenWord);
         return false;
 
     }
@@ -124,17 +125,16 @@ public class Game {
             fh.setFormatter(formatter);
 
             System.out.println("Welcome to Bulls and Cows game!");
-            LOGGER.log(Level.INFO,"Logger started!");
+            LOGGER.log(Level.INFO, "Logger started!");
 
             play("dictionary.txt");
-            while(again)
-            {
+            while (again) {
                 System.out.println("Wanna play again? Y/N");
                 Scanner scan = new Scanner(System.in);
                 String answer = scan.nextLine();
-                if (answer.equals("Y")|| answer.equals("y"))
+                if (answer.equals("Y") || answer.equals("y"))
                     play("dictionary.txt");
-                else if(answer.equals("N")|| answer.equals("n")) again = false;
+                else if (answer.equals("N") || answer.equals("n")) again = false;
             }
 
         } catch (SecurityException ex) {

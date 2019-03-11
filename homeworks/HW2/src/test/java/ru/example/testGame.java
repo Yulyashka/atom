@@ -1,6 +1,7 @@
 package ru.example;
 
 import org.junit.Test;
+
 import static junit.framework.Assert.assertEquals;
 import static ru.example.Game.*;
 
@@ -9,6 +10,7 @@ public class testGame {
     @Test
     public void getWord() throws Exception {
         assertEquals(null, getRandomWord("testNoDictionary.txt"));
+
     }
 
     @Test
