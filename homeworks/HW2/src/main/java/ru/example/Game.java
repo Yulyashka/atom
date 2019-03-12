@@ -4,16 +4,19 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
 
-import java.util.logging.*;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Game {
 
     // создание логгера
-    private static String timeStamp = new SimpleDateFormat("yyyy.MM.dd HH.mm.ss").format(Calendar.getInstance().getTime());
+    private static String timeStamp = new SimpleDateFormat("yy.MM.dd HH.mm").format(new Date());
     private static final Logger LOGGER = Logger.getLogger(Game.class.getName());
     private static FileHandler fh;
 
@@ -40,9 +43,7 @@ public class Game {
                 scanner.nextLine();
             //возврат случайного слова
             return (scanner.nextLine());
-
-        } //если файл не найден, то выводит ошибку
-        catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException ex) {
 
             System.err.println("File not found: " + ex.getMessage());
             LOGGER.log(Level.WARNING, "File not found: ", ex);
@@ -64,12 +65,12 @@ public class Game {
     }
 
     //подсчет коров
-    public static int countCows(String inputWord, String hiddenWord) {
+    public static int countCows(String inputWord, String hidWord) {
 
-        int count = Math.min(hiddenWord.length(), inputWord.length());
+        int count = Math.min(hidWord.length(), inputWord.length());
         int cows = 0;
         for (int j = 0; j < count; j++)
-            if (hiddenWord.charAt(j) != inputWord.charAt(j) && hiddenWord.contains(Character.toString(inputWord.charAt(j))))
+            if (hidWord.charAt(j) != inputWord.charAt(j) && hidWord.contains(Character.toString(inputWord.charAt(j))))
                 cows++;
         return cows;
     }

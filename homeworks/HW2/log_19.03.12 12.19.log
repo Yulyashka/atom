@@ -1,0 +1,12 @@
+мар 12, 2019 12:19:40 PM ru.example.Game main
+INFO: Logger started!
+мар 12, 2019 12:19:40 PM ru.example.Game play
+INFO: I offered a 4-letter word, your guess?
+мар 12, 2019 12:19:40 PM ru.example.Game play
+INFO: It's your 1 attempt out of 10
+мар 12, 2019 12:19:50 PM ru.example.Game play
+INFO: Bulls: 3;  Cows: 0
+мар 12, 2019 12:19:50 PM ru.example.Game play
+INFO: It's your 2 attempt out of 10
+мар 12, 2019 12:19:54 PM ru.example.Game play
+INFO: You won!!!
