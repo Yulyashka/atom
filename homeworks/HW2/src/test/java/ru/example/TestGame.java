@@ -3,9 +3,11 @@ package ru.example;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
-import static ru.example.Game.*;
+import static ru.example.Game.countBulls;
+import static ru.example.Game.countCows;
+import static ru.example.Game.getRandomWord;
 
-public class testGame {
+public class TestGame {
 
     @Test
     public void getWord() throws Exception {
