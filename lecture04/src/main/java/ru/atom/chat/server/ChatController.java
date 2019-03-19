@@ -106,11 +106,11 @@ public class ChatController {
     }
 
     /**
-     * curl -i localhost:8080/chat/deleteChat
+     * curl -X DELETE localhost:8080/chat/deleteChat
      */
     @RequestMapping(
         path = "deleteChat",
-        method = RequestMethod.GET,
+        method = RequestMethod.DELETE,
         produces = MediaType.TEXT_PLAIN_VALUE)
     public ResponseEntity deleteChat() {
         String responseBody;
